@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object task</title>
+</head>
+<body>
+    
+        <label>Enter the property:</label>
+        <input typ="text" placeholder="enter the property" id="pro"><br><br>
+        <label>Enter the value:</label>
+        <input typ="text" placeholder="enter the value" id="value"><br><br>
+        <button id="cal-btn">ADD</button>
+       
+    
+    
+    <!---script-->
+    <script>
+        let propertyInt=document.getElementById("pro");
+        let valueInt=document.getElementById("value");
+        let calbtn = document.getElementById("cal-btn");
+        let student={};
+        function createObject(){
+                
+                student[propertyInt.value]=valueInt.value;
+                console.log(student);
+                
+               
+               
+        }
+       
+        calbtn.addEventListener("click",createObject);
+    </script>
+</body>
+</html>
